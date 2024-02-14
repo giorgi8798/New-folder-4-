@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+  </head>
+
+  <body>
+    <div class="monitor"></div>
+    <table>
+      <tr>
+        <td class="pro" onclick="procenti()">%</td>
+        <td class="pro" onclick="kvadrati()">n2</td>
+        <td class="pro" onclick="clearResult()">C</td>
+        <td class="pro" onclick="deleteResult()">Del</td>
+      </tr>
+      <tr>
+        <td onclick="updateDisplay(7)">7</td>
+        <td onclick="updateDisplay(8)">8</td>
+        <td onclick="updateDisplay(9)">9</td>
+        <td class="pro" onclick="updateDisplay(' / ')">/</td>
+      </tr>
+      <tr>
+        <td onclick="updateDisplay(4)">4</td>
+        <td onclick="updateDisplay(5)">5</td>
+        <td onclick="updateDisplay(6)">6</td>
+        <td class="pro" onclick="updateDisplay(' * ')">X</td>
+      </tr>
+      <tr>
+        <td onclick="updateDisplay(1)">1</td>
+        <td onclick="updateDisplay(2)">2</td>
+        <td onclick="updateDisplay(3)">3</td>
+        <td class="pro" onclick="updateDisplay(' + ')">+</td>
+      </tr>
+      <tr>
+        <td onclick="updateDisplay(0)">0</td>
+        <td onclick="updateDisplay('.')">,</td>
+        <td class="equal" onclick="result()">=</td>
+        <td class="pro" onclick="updateDisplay(' - ')">-</td>
+      </tr>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
